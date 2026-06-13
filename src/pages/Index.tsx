@@ -1,22 +1,26 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import KeyAchievements from "@/components/KeyAchievements";
-import Projects from "@/components/Projects";
-import Education from "@/components/Education";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Navigation from '@/components/layout/Navigation';
+import Footer from '@/components/layout/Footer';
+import Hero from '@/components/sections/Hero';
+import Experience from '@/components/sections/Experience';
+import Projects from '@/components/sections/Projects';
+import Skills from '@/components/sections/Skills';
+import Education from '@/components/sections/Education';
+import Certificates from '@/components/sections/Certificates';
+import Contact from '@/components/sections/Contact';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-900">
-      <Hero />
-      <About />
-      <Experience />
-      <KeyAchievements />
-      <Projects />
-      <Education />
-      <Contact />
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <main>
+        <Hero />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+        <Certificates />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
